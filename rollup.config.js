@@ -6,8 +6,6 @@ import  terser  from '@rollup/plugin-terser';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import { main, module as pModule } from './package.json';
 
-console.log({main});
-
 export default [
 	{
 		input: 'src/index.ts',
@@ -34,7 +32,7 @@ export default [
 	},
 	{
 		input: 'src/index.ts',
-		output: [{ file: 'dist/types.d.ts', format: 'es' }],
+		output: [{ file: 'dist/index.d.ts', format: 'es' }],
 		plugins: [dts.default()],
 	},
 ];
