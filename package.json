@@ -5,6 +5,11 @@
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "typings": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akhiakl/use-controlled-input"
+  },
+  "homepage": "https://github.com/akhiakl/use-controlled-input/blob/main/README.md",
   "scripts": {
     "build": "rollup -c --bundleConfigAsCjs"
   },
